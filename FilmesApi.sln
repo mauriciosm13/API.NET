@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmesApi", "FilmesApi\FilmesApi.csproj", "{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsuarioApi", "UsuarioApi\UsuarioApi.csproj", "{71DBD0F1-B0D6-4CA8-892F-DE0399AA38A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsuariosApi", "UsuariosApi\UsuariosApi.csproj", "{60757F98-637C-49AB-BB01-326D856E8767}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71DBD0F1-B0D6-4CA8-892F-DE0399AA38A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71DBD0F1-B0D6-4CA8-892F-DE0399AA38A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71DBD0F1-B0D6-4CA8-892F-DE0399AA38A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71DBD0F1-B0D6-4CA8-892F-DE0399AA38A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60757F98-637C-49AB-BB01-326D856E8767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60757F98-637C-49AB-BB01-326D856E8767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60757F98-637C-49AB-BB01-326D856E8767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60757F98-637C-49AB-BB01-326D856E8767}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

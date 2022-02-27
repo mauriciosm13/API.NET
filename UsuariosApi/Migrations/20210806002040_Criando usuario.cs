@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using MySql.EntityFrameworkCore.Metadata;
 
-namespace UsuarioApi.Migrations
+namespace UsuariosApi.Migrations
 {
-    public partial class CriandoUsuario : Migration
+    public partial class Criandousuario : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
