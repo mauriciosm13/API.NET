@@ -1,15 +1,8 @@
-﻿using AutoMapper;
-using FilmesApi.Data;
-using FilmesApi.Services;
+﻿using FilmesApi.Services;
 using FilmesAPI.Data.Dtos;
-using FilmesAPI.Models;
 using FluentResults;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FilmesAPI.Controllers
 {
@@ -23,7 +16,7 @@ namespace FilmesAPI.Controllers
         {
             _cinemaService = cinemaService;
         }
-  
+
 
         [HttpPost]
         public IActionResult AdicionaCinema([FromBody] CreateCinemaDto cinemaDto)
@@ -46,7 +39,7 @@ namespace FilmesAPI.Controllers
             ReadCinemaDto readDto = _cinemaService.RecuperaCinemasPorId(id);
             if (readDto == null) return NotFound();
             return Ok(readDto);
-            
+
         }
 
         [HttpPut("{id}")]
@@ -55,7 +48,7 @@ namespace FilmesAPI.Controllers
             Result resultado = _cinemaService.AtualizaCinema(id, cinemaDto);
             if (resultado.IsFailed) return NotFound();
             return NoContent();
-            
+
         }
 
         [HttpDelete("{id}")]
