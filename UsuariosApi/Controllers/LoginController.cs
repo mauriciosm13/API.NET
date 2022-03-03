@@ -27,5 +27,21 @@ namespace UsuariosApi.Controllers
             if (resultado.IsFailed) return Unauthorized(resultado.Errors);
             return Ok(resultado.Successes);
         }
+        [HttpPost("/solicita-reset")]
+        public IActionResult SolicitaResetSenhaUsuario(SolicitaResetRequest request)
+        {
+            Result result = _loginService.SolicitaRequestSenhaUsuario(request);
+            if (result.IsFailed) return Unauthorized(result.Errors);
+            return Ok(result.Successes);
+        }
+
+        [HttpPost("/efetua-reset")]
+        public IActionResult ResetaSenhaUsuario(EfetuaResetRequest request)
+        {
+            Result result = _loginService.ResetaSenhaUsuario(request);
+            if (result.IsFailed) return Unauthorized(result.Errors);
+            return Ok(result.Successes);
+        }
+
     }
 }
